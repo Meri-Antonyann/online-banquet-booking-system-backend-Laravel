@@ -3,7 +3,7 @@
 
     Body ...
 
-    @component('mail::button', ['url' => 'http://localhost:8080/reset-password'."?email=$email"."&token=$token"])
+    @component('mail::button', ['url' => 'https://online-banquet-booking-system.herokuapp.com/reset-password'."?email=$email"."&token=$token"])
         Click here
     @endcomponent
 
