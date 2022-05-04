@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::post('register', [PassportAuthController::class, 'register'])->name('auth.register');
 Route::post('login', [PassportAuthController::class, 'login'])->name('auth.login');
-Route::post('Forgotpassword', [ResetPasswordController::class, 'sendEmail'])->name('reset');
+Route::post('forgotpassword', [ResetPasswordController::class, 'sendEmail'])->name('reset');
 Route::post('reset', [ResetPasswordController::class, 'reset'])->name('resetpassword');
 Route::get('getContact', [CompanyController::class, 'getcontact'])->name('get');
 Route::get('getInfo', [CompanyController::class, 'getInfo'])->name('info');
