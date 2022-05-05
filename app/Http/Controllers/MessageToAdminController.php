@@ -28,7 +28,7 @@ class MessageToAdminController extends Controller
 
     }
       public function sendRemark(Request $request, $id){
-           $mess=count($request->inputtext) - 1;
+           $mess=count($request->inputtext)-1 ;
            $message = RemarkMessage::create([
                'message'=> $request->inputtext[$mess],
                'user_id'=> Auth::id(),
