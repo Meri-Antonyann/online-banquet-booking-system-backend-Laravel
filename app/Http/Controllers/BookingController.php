@@ -23,7 +23,6 @@ class BookingController extends Controller
                 'guests' =>$request->guests,
                 'event' =>$request->event,
                 'service' =>$request->service,
-                'price' =>$request->price,
                 'message' =>$request->message,
             ]);
 

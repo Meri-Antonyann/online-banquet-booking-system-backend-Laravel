@@ -23,7 +23,6 @@ return new class extends Migration
             $table->integer('guests');
             $table->string('event');
             $table->string('service');
-            $table->string('price');
             $table->longText('message');
             $table->string('status')->default('Waiting');
             $table->timestamps();

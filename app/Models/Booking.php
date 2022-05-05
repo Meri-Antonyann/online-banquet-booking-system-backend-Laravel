@@ -16,7 +16,6 @@ class Booking extends Model
         'dateTo',
         'event',
         'service',
-        'price',
         'message',
         'status',
         'user_id'
