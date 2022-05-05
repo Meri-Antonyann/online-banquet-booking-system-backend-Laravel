@@ -62,6 +62,7 @@ Route::middleware('auth:api')->group(function () {
     Route::get('getServices', [ServiceController::class, 'services'])->name('services');
     Route::get('getEvents', [EventController::class, 'events'])->name('events');
     Route::get('livesearch', [BookingController::class, 'search'])->name('search');
+    Route::get('searchdata/{id}', [BookingController::class, 'searchdata'])->name('searchdata');
     Route::get('newBooking', [BookingController::class, 'newBooking'])->name('newBooking');
     Route::get('getNewBookings', [BookingController::class, 'getNewBookings'])->name('getNewBookings');
     Route::get('getCancelledBookings', [BookingController::class, 'getCancelledBookings'])->name('getCancelledBookings');

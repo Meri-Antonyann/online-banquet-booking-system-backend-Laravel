@@ -130,6 +130,11 @@ class BookingController extends Controller
         return response()->json($data);
     }
 
+    public function searchdata($id){
+        $data = Booking::where('id', $id)->get();
+        return response()->json(['booking' => $data ]);
+    }
+
     public function bookingsForSomePeriod(Request $request){
 
         $date1=$request->fromDate;
