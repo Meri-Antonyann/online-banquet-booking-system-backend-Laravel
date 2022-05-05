@@ -127,7 +127,7 @@ class BookingController extends Controller
     }
 
     public function search(Request $request){
-        $data = Booking::where('name', 'LIKE','%'.$request->search.'%')->orWhere('id', 'LIKE','%'.$request->search.'%')->orWhere('number', 'LIKE','%'.$request->search.'%')->get();
+        $data = Booking::where('name', 'LIKE','%'.$request->search.'%')->orWhere('id', 'LIKE','%'.$request->search.'%')->orWhere('email', 'LIKE','%'.$request->search.'%')->orWhere('number', 'LIKE','%'.$request->search.'%')->get();
         return response()->json($data);
     }
 
